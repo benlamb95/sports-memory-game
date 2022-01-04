@@ -1,0 +1,16 @@
+/* --------- Global style */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Architects Daughter', cursive;
+    color: #fafafa;
+    text-align: center;
+    background: rgb(151, 230, 19);
+    background: linear-gradient(90deg, rgba(151, 230, 19, 1) 0%, rgba(8, 157, 59, 1) 100%, rgba(0, 255, 166, 1) 100%);
+}
