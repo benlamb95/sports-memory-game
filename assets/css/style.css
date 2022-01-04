@@ -7,6 +7,10 @@
     scroll-behavior: smooth;
 }
 
+html {
+    min-height: 100vh;
+}
+
 body {
     font-family: 'Architects Daughter', cursive;
     color: #fafafa;
@@ -17,6 +21,25 @@ body {
 
 /* --------- Logo and heading */
 
+.logo-heading {
+    display: inline-block;
+}
+
+.logo {
+    margin-top: 30px;
+    height: 180px;
+    width: 220px;
+    border-radius: 50%;
+}
+
+.heading {
+    text-align: center;
+    font-size: 3rem;
+    margin: 5px 0;
+    padding: 10px 0px;
+    text-decoration: underline;
+    letter-spacing: 2px;
+}
 
 
 /* --------- Font awesome buttons */
