@@ -22,13 +22,24 @@
 
 <body>
     <div class="logo-heading">
-        <h1 class="heading">Sports Memory Game</h1>
-        <img src="/assets/images/sports image.jpg" alt="Page Logo ">
+        <img class="logo" src="/assets/images/sports image.jpg" alt="Page Logo ">
+        <h1 class="heading">Sports Memory Game</h1>  
+    </div>
+
+    <div class="game-buttons-container">
+        <i class="fas fa-undo" id="restart" onclick="restartGame()" aria-label="Restart Button"></i>
+        <i class="fas fa-question" id="how-to-play" aria-label="How to play Button"></i>
+        <i class="fas fa-volume-mute" id="play-pause" onclick="playPause()" aria-label="Sound Button" type="audio"></i>
     </div>
     
     <div class="game-container">
         <div class="info-container">
-
+            <div class="game-info">
+                Timer: <span id="timer">00:00</span>
+            </div>
+            <div class="game-info">
+                Moves: <span id="moves">0</span>
+            </div>
         </div>
     </div>
 

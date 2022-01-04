@@ -14,3 +14,39 @@ body {
     background: rgb(151, 230, 19);
     background: linear-gradient(90deg, rgba(151, 230, 19, 1) 0%, rgba(8, 157, 59, 1) 100%, rgba(0, 255, 166, 1) 100%);
 }
+
+/* --------- Logo and heading */
+
+
+
+/* --------- Font awesome buttons */
+
+.game-buttons-container {
+    font-size: 2rem;
+    margin: 10px 0;
+    display: inline-block;
+    text-align: center;
+    height: 3rem;
+    width: 100%;
+}
+
+#restart,
+#how-to-play,
+#play-pause {
+    padding-left: 20px;
+}
+
+#restart:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+#how-to-play:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+#play-pause:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
