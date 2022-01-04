@@ -21,12 +21,8 @@ body {
 
 /* --------- Logo and heading */
 
-.logo-heading {
-    display: inline-block;
-}
-
 .logo {
-    margin-top: 30px;
+    margin-top: 20px;
     height: 180px;
     width: 220px;
     border-radius: 50%;
@@ -36,7 +32,7 @@ body {
     text-align: center;
     font-size: 3rem;
     margin: 5px 0;
-    padding: 10px 0px;
+    padding: 10px;
     text-decoration: underline;
     letter-spacing: 2px;
 }
@@ -73,3 +69,6 @@ body {
     transform: scale(1.2);
     cursor: pointer;
 }
+
+/* --------- info container */
+
