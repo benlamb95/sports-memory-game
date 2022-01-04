@@ -86,3 +86,10 @@ body {
 .game-info {
     padding-left: 40px;
 }
+
+/* --------- memory game container */
+
+.memory-game {
+    display: grid;
+    grid-template-columns: 5;
+}

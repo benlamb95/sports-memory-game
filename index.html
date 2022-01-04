@@ -12,18 +12,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
-<!--Google font and font awesome scripts-->
+    <!--Google font and font awesome scripts-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="logo-heading">
         <img class="logo" src="/assets/images/sports-image.jpg" alt="Page Logo ">
-        <h1 class="heading">Sports Memory Game</h1>  
+        <h1 class="heading">Sports Memory Game</h1>
     </div>
 
     <div class="game-buttons-container">
@@ -31,7 +31,7 @@
         <i class="fas fa-question" id="how-to-play" aria-label="How to play Button"></i>
         <i class="fas fa-volume-mute" id="play-pause" onclick="playPause()" aria-label="Sound Button" type="audio"></i>
     </div>
-    
+
     <div class="game-container">
         <div class="info-container">
             <div class="game-info">
@@ -41,17 +41,98 @@
                 <i class="far fa-hand-paper"></i></i> Moves: <span id="moves">0</span>
             </div>
             <div class="game-info">
-                <i class="far fa-star"></i>  Last Time: <span id="score">0</span>
+                <i class="far fa-star"></i> Last Time: <span id="score">0</span>
             </div>
         </div>
         <div class="memory-game">
-            <!-- card 1 duo -->
+            <!-- card 1 pair -->
             <div class="memory-card" data-id="card1">
                 <img class="card-front" src="assets/images/runner.jpg" alt="running">
                 <img class="card-back" src="assets/images/card-back.jpg" alt="Card Back">
             </div>
             <div class="memory-card" data-id="card1">
                 <img class="card-front" src="assets/images/runner.jpg" alt="running">
+                <img class="card-back" src="assets/images/card-back.jpg" alt="Card Back">
+            </div>
+            <!-- card 2 pair -->
+            <div class="memory-card" data-id="card2">
+                <img class="card-front" src="assets/images/badminton.jpg" alt="badminton">
+                <img class="card-back" src="assets/images/card-back.jpg" alt="Card Back">
+            </div>
+            <div class="memory-card" data-id="card2">
+                <img class="card-front" src="assets/images/badminton.jpg" alt="badminton">
+                <img class="card-back" src="assets/images/card-back.jpg" alt="Card Back">
+            </div>
+            <!-- card 3 pair -->
+            <div class="memory-card" data-id="card3">
+                <img class="card-front" src="assets/images/baseball.jpg" alt="baseball">
+                <img class="card-back" src="assets/images/card-back.jpg" alt="Card Back">
+            </div>
+            <div class="memory-card" data-id="card3">
+                <img class="card-front" src="assets/images/baseball.jpg" alt="baseball">
+                <img class="card-back" src="assets/images/card-back.jpg" alt="Card Back">
+            </div>
+            <!-- card 4 pair -->
+            <div class="memory-card" data-id="card4">
+                <img class="card-front" src="assets/images/basketball.jpg" alt="basketball">
+                <img class="card-back" src="assets/images/card-back.jpg" alt="Card Back">
+            </div>
+            <div class="memory-card" data-id="card4">
+                <img class="card-front" src="assets/images/basketball.jpg" alt="basketball">
+                <img class="card-back" src="assets/images/card-back.jpg" alt="Card Back">
+            </div>
+            <!-- card 5 pair -->
+            <div class="memory-card" data-id="card5">
+                <img class="card-front" src="assets/images/boxing.jpg" alt="boxing">
+                <img class="card-back" src="assets/images/card-back.jpg" alt="Card Back">
+            </div>
+            <div class="memory-card" data-id="card5">
+                <img class="card-front" src="assets/images/boxing.jpg" alt="boxing">
+                <img class="card-back" src="assets/images/card-back.jpg" alt="Card Back">
+            </div>
+            <!-- card 6 pair -->
+            <div class="memory-card" data-id="card6">
+                <img class="card-front" src="assets/images/female-runner.jpg" alt="female Runner">
+                <img class="card-back" src="assets/images/card-back.jpg" alt="Card Back">
+            </div>
+            <div class="memory-card" data-id="card6">
+                <img class="card-front" src="assets/images/female-runner.jpg" alt="female Runner">
+                <img class="card-back" src="assets/images/card-back.jpg" alt="Card Back">
+            </div>
+            <!-- card 7 pair -->
+            <div class="memory-card" data-id="card7">
+                <img class="card-front" src="assets/images/football.jpg" alt="football">
+                <img class="card-back" src="assets/images/card-back.jpg" alt="Card Back">
+            </div>
+            <div class="memory-card" data-id="card7">
+                <img class="card-front" src="assets/images/football.jpg" alt="football">
+                <img class="card-back" src="assets/images/card-back.jpg" alt="Card Back">
+            </div>
+            <!-- card 8 pair -->
+            <div class="memory-card" data-id="card8">
+                <img class="card-front" src="assets/images/gym.jpg" alt="gym">
+                <img class="card-back" src="assets/images/card-back.jpg" alt="Card Back">
+            </div>
+            <div class="memory-card" data-id="card8">
+                <img class="card-front" src="assets/images/gym.jpg" alt="gym">
+                <img class="card-back" src="assets/images/card-back.jpg" alt="Card Back">
+            </div>
+            <!-- card 9 pair -->
+            <div class="memory-card" data-id="card9">
+                <img class="card-front" src="assets/images/tennis.jpg" alt="tennis">
+                <img class="card-back" src="assets/images/card-back.jpg" alt="Card Back">
+            </div>
+            <div class="memory-card" data-id="card9">
+                <img class="card-front" src="assets/images/tennis.jpg" alt="tennis">
+                <img class="card-back" src="assets/images/card-back.jpg" alt="Card Back">
+            </div>
+            <!-- card 10 pair -->
+            <div class="memory-card" data-id="card10">
+                <img class="card-front" src="assets/images/yoga.jpg" alt="yoga">
+                <img class="card-back" src="assets/images/card-back.jpg" alt="Card Back">
+            </div>
+            <div class="memory-card" data-id="card10">
+                <img class="card-front" src="assets/images/yoga.jpg" alt="yoga">
                 <img class="card-back" src="assets/images/card-back.jpg" alt="Card Back">
             </div>
         </div>
