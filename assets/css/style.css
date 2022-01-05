@@ -159,7 +159,7 @@ body {
     background-color: #fafafa;
     margin: 0 auto;
     width: 35rem;
-    height: 35rem;
+    height: 30rem;
     border-radius: 50px;
 }
 
@@ -192,6 +192,7 @@ body {
 
 .modal-body>p {
     color: black;
+    font-weight: bold;
     text-decoration: none;
     padding: 5px 5px;
     font-size: 1rem;
