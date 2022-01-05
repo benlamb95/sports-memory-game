@@ -59,18 +59,24 @@ body {
 }
 
 #restart:hover {
-    transform: scale(1.2);
+    transform: scale(1.4);
+    color: black;
     cursor: pointer;
+    transition: all 0.35s;
 }
 
 #how-to-play:hover {
-    transform: scale(1.2);
+    transform: scale(1.4);
+    color: black;
     cursor: pointer;
+    transition: all 0.35s;
 }
 
 #play-pause:hover {
-    transform: scale(1.2);
+    transform: scale(1.4);
+    color: black;
     cursor: pointer;
+    transition: all 0.35s;
 }
 
 /* --------- info container */
@@ -113,6 +119,7 @@ body {
     width: 110px;
     margin: 7px;
     position: relative;
+    cursor: pointer;
 }
 
 .card-front,
@@ -180,3 +187,27 @@ body {
     padding: 5px 5px;
     font-size: 1rem;
 }
+
+/* ---------- footer */
+
+footer {
+    height: 5rem;
+}
+
+.footer-social {
+    margin-top: 30px;
+    font-size: 2em;
+}
+
+a > i:hover {
+    transform: scale(1.4);
+    color: black;
+    cursor: pointer;
+    transition: all 0.35s;
+}
+
+a:visited { 
+    text-decoration: none; 
+    color: #fafafa; 
+   }
+
