@@ -1,7 +1,7 @@
 
 
 /* -- Modal Script -- */
-
+/* -- Help from W3 schools -- */
 var modal = document.getElementById("playModal")
 
 var button = document.getElementById("how-to-play")
