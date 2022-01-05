@@ -128,26 +128,31 @@ body {
     background-color: #fafafa;
     margin: 0 auto;
     width: 35rem;
-    height: 40rem;
+    height: 35rem;
     border-radius: 50px;
 }
 
 .modal-header {
-    float: left;
+    position: relative;
+    width: 100%;
+}
+
+.modal-title {
     color: black;
     padding: 30px 0 15px;
-    font-size: 1.2rem;
+    font-size: 2rem;
     text-decoration: underline;
 }
 
 .close {
     float: right;
     font-size: 28px;
-    margin-right: 30px;
+    margin: 30px;
     text-decoration: none;
     font-weight: bold;
     border: none;
     background-color: #fafafa;
+    cursor: pointer;
 }
 
 .close:hover {
