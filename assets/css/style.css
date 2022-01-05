@@ -1,5 +1,7 @@
 /* --------- Global style */
 
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -129,6 +131,7 @@ body {
     height: 100%;
     position: absolute;
     border: 2px solid black;
+    border-radius: 10px;
 }
 
 /* --------- Modal area */
