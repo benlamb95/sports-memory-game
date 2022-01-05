@@ -188,6 +188,7 @@ body {
 
 .close:hover {
     color: red;
+    transition: 0.2s;
 }
 
 .modal-body>p {
