@@ -76,6 +76,7 @@ body {
     min-height: 50px;
     height: 9vh;
     max-height: 72px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -91,19 +92,30 @@ body {
 
 .game-container {
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-content: center;
 }
 
 .memory-game {
-    margin-top: 30px;
-    display: inline-grid;
-    grid-template-columns: 150px 150px 150px 150px 150px;
-    grid-template-rows: 150px 150px 150px 150px;
-    grid-gap: 5px;
-    justify-content: center;
-    width: 650px;
-    height: 640px;
+    display: grid;
+    grid-template-columns: repeat(5, 7rem);
+    grid-template-rows: repeat(4, 8rem);
+    grid-gap: 1.2rem;
+}
+
+.memory-card {
+    position: relative;
+    width: 110px;
+    height: 130px;
+    border: 2px solid black;
+}
+
+.card-front, 
+.card-back {
+    width: 100%;
+    height: 100%;
 }
 
 
