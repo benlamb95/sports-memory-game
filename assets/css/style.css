@@ -114,15 +114,21 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-    padding-right: 100px;
 }
 
 .memory-card {
     height: 130px;
     width: 110px;
     margin: 7px;
+    padding-right: 100px;
     position: relative;
     cursor: pointer;
+    border: 2px solid purple;
+}
+
+.memory-card:active {
+    transform: scale(.95);
+    transition: 0.35s;
 }
 
 .card-front,
