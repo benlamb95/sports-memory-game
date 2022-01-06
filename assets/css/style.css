@@ -240,13 +240,22 @@ a:visited {
 
 /* ---------- Media Queries */
 
-@media (max-width: 700px){
+@media (max-width: 700px) {
     .game-info {
         margin: 0;
     }
-    
+
     .game-info {
         font-size: 1em;
+    }
+
+    .modal-content {
+        height: 25rem;
+    }
+
+    .modal-body p {
+        font-size: 0.9rem;
+        padding: 10px 5px;
     }
 }
 
@@ -254,7 +263,7 @@ a:visited {
     .logo-heading {
         height: 50px;
     }
-    
+
     .heading {
         font-size: 1.8rem;
     }
@@ -272,7 +281,8 @@ a:visited {
     .game-buttons-container {
         font-size: 1rem;
         margin: 10px 0 0
-    }    
+    }
+
     .memory-game {
         width: 100%;
         height: 380px;
@@ -308,11 +318,6 @@ a:visited {
         font-size: 1.4rem;
     }
 
-    .logo {
-        width: 100px;
-        height: 60px;
-    }
-    
     .game-info {
         font-size: 0.8em;
         padding-left: 20px;
@@ -324,13 +329,59 @@ a:visited {
         font-size: 1rem;
     }
 
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .game-buttons-container {
+        font-size: 0.8rem;
+        height: 20px;
+    }
+
     .memory-game {
-        width: 280px; 
+        width: 280px;
+        height: 300px;
     }
 
     .memory-card {
-        width: calc(25% - 4px);
-        height: calc(16.666% - 4px);
+        width: 65px;
+        height: 75px;
+        padding-right: 0;
         margin: 2px;
+    }
+
+    .modal-content {
+        width: 17rem;
+        height: 21rem;
+    }
+
+    .modal-title {
+        font-size: 1.1rem;
+    }
+
+    .close{
+        font-size: 1.1rem;
+    }
+
+    .modal-body p {
+        font-size: 0.6rem;
+        padding: 8px 5px;
+    }    
+}
+
+@media (max-width: 290px) {
+    .logo-heading {
+        margin-top: 40px;
+        height: 20px;
+    }
+
+    .logo {
+        margin-top: 25px;
+        padding-top: 5px;
+    }
+
+    .game-buttons-container {
+        margin-top: 50px;
     }
 }
