@@ -15,6 +15,29 @@ matchAudio.volume = 0.5;
 const winnerAudio = new Audio('assets/audio/winner.mp3')
 winnerAudio = 0.6;
 
+/* ---------- Game variables ---------- */
+
+const cards = document.querySelectorAll('.memory-cards')
+let firstCard, secondCard;
+let lockBoard = false;
+let cardFlipped = false;
+let matches = 0;
+
+/* -- End of Variables -- */
+
+/* -- Functions for audio -- */
+
+function playPause(){
+    if (count == 0){
+        count = 1;
+        backgroundAudio.play()
+    } else {
+        count = 0;
+        backgroundAudio.pause()
+    }
+
+}
+
 /* -- Functions for game template -- */
 
 function startGame(){
