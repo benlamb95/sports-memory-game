@@ -56,6 +56,9 @@ function startGame(){
 
 function flipCard(){
     this.classList.toggle('flip')
+    flipAudio.play();
+    flipAudio.currentTime = 0;
+
 }
 
 
