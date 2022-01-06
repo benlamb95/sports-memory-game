@@ -31,9 +31,11 @@ function playPause(){
     if (count == 0){
         count = 1;
         backgroundAudio.play()
+        playPauseIcon.className = "fas fa-volume-up";
     } else {
         count = 0;
         backgroundAudio.pause()
+        playPauseIcon.className = "fas fa-volume-mute";
     }
 
 }
