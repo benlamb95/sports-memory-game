@@ -77,8 +77,12 @@ function flipCard() {
 
 function checkMatch() {
     let isAMatch = firstCard.dataset.id === secondCard.dataset.id;
-    isAMatch ? disableCards() : unflipCards();
+    isAMatch ? matchedCards() : unflipCards();
     matchAudio.play();
+    matches = matches + 1;
+    if (matches === 8){
+        winner();
+    }
 }
 
 
