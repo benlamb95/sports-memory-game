@@ -77,7 +77,7 @@ function flipCard() {
 
 function checkMatch() {
     let isAMatch = firstCard.dataset.id === secondCard.dataset.id;
-    isAMatch ? matchedCards() : unflipCards();
+    isAMatch ? matchedCards() : unmatchedCards();
     matchAudio.play();
     matches = matches + 1;
     if (matches === 8){
@@ -85,10 +85,9 @@ function checkMatch() {
     }
 }
 
-
-
 function matchedCards() {
-
+    firstCard.removeEventListener('click', flipCard)
+    secondCard.removeEventListener('click', flipCard)
 }
 
 function unmatchedCards() {
