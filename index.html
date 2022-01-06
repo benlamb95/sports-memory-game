@@ -8,24 +8,26 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
 </head>
-
+<!-- Logo, page title and overlay text -->
 <body>
     <div class="logo-heading">
         <img class="logo" src="assets/images/sports-image.jpg" alt="Page Logo ">
         <h1 class="heading">Sports Memory Game</h1>
-        <div class="overlay-start visible">Click to start!</div>
-        <div class="overlay-finish visible" id="winner-text">
+        <div class="overlay-text">
+            Click to start!
+        </div>
+        <div class="overlay-text visible" id="winner-text">
             Congratulations!
-            <span class="finish-text">Click here to restart</span>
+            <span class="finish-text-small">Click here to restart</span>
         </div>
     </div>
-
+<!-- Font awesome icons -->
     <div class="game-buttons-container">
         <i class="fas fa-undo" id="restart" onclick="restartGame()" aria-label="Restart Button"></i>
         <i class="fas fa-question" id="how-to-play" aria-label="How to play Button"></i>
         <i class="fas fa-volume-mute" id="play-pause" onclick="playPause()" aria-label="Sound Button" type="audio"></i>
     </div>
-
+<!-- Games stats -->
     <div class="game-container">
         <div class="info-container">
             <div class="game-info">
@@ -38,6 +40,7 @@
                 <i class="far fa-star"></i> Last Time: <span id="lastScore">0</span>
             </div>
         </div>
+<!-- Memory Game -->        
         <div class="memory-game">
             <!-- card 1 pair -->
             <div class="memory-card" data-id="card1">
