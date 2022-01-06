@@ -118,11 +118,6 @@ body {
     perspective: 1000px;
 }
 
-.memory-card img {
-    height: 130px;
-    width: 110px;
-}
-
 .memory-card {
     height: 130px;
     width: 110px;
@@ -157,7 +152,7 @@ body {
 
 .card-front {
     transform: rotateY(180deg);
-  }
+}
 
 /* --------- Modal area */
 /* Help from W3 schools */
@@ -176,6 +171,7 @@ body {
 
 .modal-content {
     position: relative;
+    width: 100%;
     background-color: #fafafa;
     margin: 0 auto;
     width: 35rem;
@@ -230,15 +226,94 @@ footer {
     font-size: 2em;
 }
 
-a > i:hover {
+a>i:hover {
     transform: scale(1.4);
     color: black;
     cursor: pointer;
     transition: all 0.35s;
 }
 
-a:visited { 
-    text-decoration: none; 
-    color: #fafafa; 
-   }
+a:visited {
+    text-decoration: none;
+    color: #fafafa;
+}
 
+/* ---------- Media Queries */
+
+@media (max-width: 700px){
+    .game-info {
+        margin: 0;
+    }
+    
+    .game-info {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 570px) {
+    .logo-heading {
+        height: 50px;
+    }
+    
+    .heading {
+        font-size: 1.8rem;
+    }
+
+    .logo {
+        width: 100px;
+        height: 60px;
+        padding-top: 5px;
+    }
+
+    .info-container {
+        height: 70px;
+    }
+
+    .game-buttons-container {
+        font-size: 1rem;
+        margin: 10px 0 0
+    }    
+    .memory-game {
+        width: 100%;
+        height: 380px;
+    }
+
+    .memory-card {
+        width: 70px;
+        height: 90px;
+    }
+
+    .footer-social {
+        font-size: 1em;
+        padding-top: 20px;
+    }
+
+    .modal-content {
+        width: 25rem;
+        height: 25rem;
+    }
+
+    .modal-title {
+        font-size: 1.5rem;
+    }
+
+    .modal-body p {
+        font-size: 0.8rem;
+        padding: 10px 5px;
+    }
+}
+
+@media (max-width: 495px) {
+    .heading {
+        font-size: 1.4rem;
+    }
+
+    .logo {
+        width: 100px;
+        height: 60px;
+    }
+    
+    .game-info {
+        font-size: 0.8em;
+    }
+}
