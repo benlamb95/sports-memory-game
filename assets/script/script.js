@@ -34,6 +34,7 @@ let matches = 0;
 /* -- End of Variables -- */
 
 /* -- Functions for background audio -- */
+/* Help from  https://www.youtube.com/watch?v=wffK2OIt8u0 */
 
 function playPause(){
     if (count == 0){
@@ -51,31 +52,44 @@ function playPause(){
 /* -- Functions for game template -- */
 
 function startGame(){
-    
+ 
 }
+
+
+/* Help with flipCard function taken from Marina Ferreira */
 
 function flipCard(){
     this.classList.toggle('flip')
     flipAudio.play();
     flipAudio.currentTime = 0;
 
-    
-}
+    if(!cardFlipped){
+        cardFlipped = true;
+        firstCard = this;
+        return;
+    }
 
+    secondCard = this;
+    cardFlipped = false;
 
-function shuffleCards(){
-    
+    checkMatch();
 }
 
 function checkMatch(){
     
 }
 
+
 function matchedCards(){
 
 }
 
 function unmatchedCards(){
+    
+}
+
+
+function shuffleCards(){
     
 }
 
