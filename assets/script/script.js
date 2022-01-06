@@ -56,38 +56,38 @@ function startGame() {
 }
 
 
-/* Help with flipCard function from Marina Ferreira */
+/* Help from Marina Ferreira memory card game */
 
 function flipCard() {
     if (lockBoard) return;
-    if(this === firstCard) return;
-    this.classList.toggle('flip')
+    if(this === firstCard) return; // stops the action of clicking same card twice. 
+    this.classList.add('flip') 
     flipAudio.play();
     flipAudio.currentTime = 0;
 
-    
-    if (!cardFlipped) {
+    if (!cardFlipped) { // if first time clicking this card 
         cardFlipped = true;
         firstCard = this;
         return;
     }
 
-    secondCard = this;
     cardFlipped = false;
+    secondCard = this;
+    
 
     checkMatch();
 }
 
 function checkMatch() {
-    let isAMatch = firstCard.dataset.id === secondCard.dataset.id;
-    isAMatch ? matchedCards() : unmatchedCards();
+    let isAMatch = firstCard.dataset.id === secondCard.dataset.id; // Checks both dataID set are the same 
+    isAMatch ? matchedCards() : unmatchedCards(); // if they are will do either matched or unmatched function
 }
 
 function matchedCards() {
-    firstCard.removeEventListener('click', flipCard)
+    firstCard.removeEventListener('click', flipCard) // removes click function from matched cards
     secondCard.removeEventListener('click', flipCard)
 
-    matchAudio.play();
+    matchAudio.play();  // Plays match audio
     matches = matches + 1;
     if (matches === 8) {
         winner();
@@ -102,6 +102,7 @@ function unmatchedCards() {
         $(secondCard).removeClass('flip');
         boardReset();
     }, 1000);
+    boardReset = true;
 }
 
 function boardReset() {
