@@ -61,7 +61,7 @@ function startGame() {
 function flipCard() {
     if (lockBoard) return;
     if(this === firstCard) return; // stops the action of clicking same card twice. 
-    this.classList.add('flip') 
+    this.classList.toggle('flip') 
     flipAudio.play();
     flipAudio.currentTime = 0;
 
@@ -74,7 +74,6 @@ function flipCard() {
     cardFlipped = false;
     secondCard = this;
     
-
     checkMatch();
 }
 
@@ -86,6 +85,7 @@ function checkMatch() {
 function matchedCards() {
     firstCard.removeEventListener('click', flipCard) // removes click function from matched cards
     secondCard.removeEventListener('click', flipCard)
+    boardReset();
 
     matchAudio.play();  // Plays match audio
     matches = matches + 1;
@@ -102,7 +102,7 @@ function unmatchedCards() {
         $(secondCard).removeClass('flip');
         boardReset();
     }, 1000);
-    boardReset = true;
+    
 }
 
 function boardReset() {
