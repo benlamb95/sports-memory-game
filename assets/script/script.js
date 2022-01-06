@@ -15,9 +15,17 @@ matchAudio.volume = 0.5;
 var winnerAudio = new Audio('assets/audio/winner.mp3')
 winnerAudio = 0.6;
 
+/* ---------- Time variables ---------- */
+/* Help from https://www.youtube.com/watch?v=_a4XCarxwr8 */
+
+let timeHour = document.getElementById('timer');
+let seconds = 0;
+
+timeHour = `00:${seconds}`;
+
 /* ---------- Game variables ---------- */
 
-const cards = document.querySelectorAll('.memory-cards')
+const cards = document.querySelectorAll('.memory-card')
 let firstCard, secondCard;
 let lockBoard = false;
 let cardFlipped = false;
@@ -25,7 +33,7 @@ let matches = 0;
 
 /* -- End of Variables -- */
 
-/* -- Functions for audio -- */
+/* -- Functions for background audio -- */
 
 function playPause(){
     if (count == 0){
@@ -47,7 +55,7 @@ function startGame(){
 }
 
 function flipCard(){
-    
+    this.classList.toggle('flip')
 }
 
 
@@ -94,3 +102,7 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 }
+
+/* -- Event Listeners -- */
+
+cards.forEach(card => card.addEventListener('click', flipCard));
