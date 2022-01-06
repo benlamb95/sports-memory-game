@@ -23,6 +23,7 @@ let seconds = 0;
 
 timeHour = `00:${seconds}`;
 
+
 /* ---------- Game variables ---------- */
 
 const cards = document.querySelectorAll('.memory-card')
@@ -30,7 +31,8 @@ let firstCard, secondCard;
 let lockBoard = false;
 let cardFlipped = false;
 let matches = 0;
-
+let counter = document.getElementById('moves');
+let moves = 0;
 /* -- End of Variables -- */
 
 /* -- Functions for background audio -- */
@@ -52,6 +54,7 @@ function playPause() {
 /* -- Functions for game template -- */
 
 function startGame() {
+    
 
 }
 
@@ -60,8 +63,8 @@ function startGame() {
 
 function flipCard() {
     if (lockBoard) return;
-    if(this === firstCard) return; // stops the action of clicking same card twice. 
-    this.classList.toggle('flip') 
+    if (this === firstCard) return; // stops the action of clicking same card twice. 
+    this.classList.toggle('flip')
     flipAudio.play();
     flipAudio.currentTime = 0;
 
@@ -73,8 +76,9 @@ function flipCard() {
 
     cardFlipped = false;
     secondCard = this;
-    
+
     checkMatch();
+    countMoves();
 }
 
 function checkMatch() {
@@ -87,11 +91,7 @@ function matchedCards() {
     secondCard.removeEventListener('click', flipCard)
     boardReset();
 
-    matchAudio.play();  // Plays match audio
-    matches = matches + 1;
-    if (matches === 8) {
-        winner();
-    }
+    matchAudio.play(); // Plays match audio
 }
 
 
@@ -102,25 +102,33 @@ function unmatchedCards() {
         $(secondCard).removeClass('flip');
         boardReset();
     }, 1000);
-    
+
 }
 
 function boardReset() {
     [hasFlippedCard, lockBoard] = [false, false];
     [firstCard, secondCard] = [null, null];
-  }
+}
+
+function countMoves(){
+    moves++;
+    counter.innerHTML = moves;
+}
 
 function shuffleCards() {
 
 }
 
 function winner() {
-    winnerAudio.play();
-    if (count === 1) {
-        count = 0;
-        backgroundAudio.pause();
+    matches = matches + 1;
+    if (matches === 8) {
+        winner();
+        winnerAudio.play();
+        if (count === 1) {
+            count = 0;
+            backgroundAudio.pause();
+        }
     }
-
 }
 
 /* -- Help from W3 schools -- */

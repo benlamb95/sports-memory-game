@@ -42,7 +42,7 @@ body {
     letter-spacing: 2px;
 }
 
-/* --------- Overlays for start and winning */
+/* --------- Overlays for start and winning 
 
 .overlay-text {
     display: none;
@@ -66,7 +66,7 @@ body {
 .finish-text-small {
     font-size: 0.5em;
 }
-
+*/
 
 /* --------- Font awesome buttons */
 
