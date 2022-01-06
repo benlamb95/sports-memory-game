@@ -56,14 +56,16 @@ function startGame() {
 }
 
 
-/* Help with flipCard function taken from Marina Ferreira */
+/* Help with flipCard function from Marina Ferreira */
 
 function flipCard() {
     if (lockBoard) return;
+    if(this === firstCard) return;
     this.classList.toggle('flip')
     flipAudio.play();
     flipAudio.currentTime = 0;
 
+    
     if (!cardFlipped) {
         cardFlipped = true;
         firstCard = this;
@@ -92,6 +94,8 @@ function matchedCards() {
     }
 }
 
+
+/* Jquery https://learn.jquery.com/ */
 function unmatchedCards() {
     setTimeout(() => {
         $(firstCard).removeClass('flip');
@@ -100,6 +104,10 @@ function unmatchedCards() {
     }, 1000);
 }
 
+function boardReset() {
+    [hasFlippedCard, lockBoard] = [false, false];
+    [firstCard, secondCard] = [null, null];
+  }
 
 function shuffleCards() {
 
