@@ -299,6 +299,10 @@ a:visited {
         padding-top: 5px;
     }
 
+    .overlay-text {
+        font-size: 4em;
+    }
+
     .info-container {
         height: 70px;
     }
@@ -343,6 +347,10 @@ a:visited {
         font-size: 1.4rem;
     }
 
+    .overlay-text {
+        font-size: 3em;
+    }
+
     .game-info {
         font-size: 0.8em;
         padding-left: 20px;
@@ -357,6 +365,10 @@ a:visited {
     .logo {
         width: 60px;
         height: 60px;
+    }
+
+    .overlay-text {
+        font-size: 2em;
     }
 
     .game-buttons-container {
