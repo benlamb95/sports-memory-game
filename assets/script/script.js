@@ -59,6 +59,7 @@ function flipCard(){
     flipAudio.play();
     flipAudio.currentTime = 0;
 
+    
 }
 
 
@@ -79,7 +80,18 @@ function unmatchedCards(){
 }
 
 function winner(){
+    winnerAudio.play();
+    if (count === 1){
+        count = 0;
+        backgroundAudio.pause();
+    }
     
+}
+
+/* -- Help from W3 schools -- */
+
+function restartGame() {
+    location.reload();
 }
 
 
