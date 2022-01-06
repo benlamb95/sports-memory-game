@@ -59,6 +59,7 @@ function startGame() {
 /* Help with flipCard function taken from Marina Ferreira */
 
 function flipCard() {
+    if (lockBoard) return;
     this.classList.toggle('flip')
     flipAudio.play();
     flipAudio.currentTime = 0;
@@ -86,13 +87,17 @@ function matchedCards() {
 
     matchAudio.play();
     matches = matches + 1;
-    if(matches === 8){
+    if (matches === 8) {
         winner();
     }
 }
 
 function unmatchedCards() {
-
+    setTimeout(() => {
+        $(firstCard).removeClass('flip');
+        $(secondCard).removeClass('flip');
+        boardReset();
+    }, 1000);
 }
 
 
