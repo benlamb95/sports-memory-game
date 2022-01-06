@@ -36,8 +36,8 @@ let matches = 0;
 /* -- Functions for background audio -- */
 /* Help from  https://www.youtube.com/watch?v=wffK2OIt8u0 */
 
-function playPause(){
-    if (count == 0){
+function playPause() {
+    if (count == 0) {
         count = 1;
         backgroundAudio.play()
         playPauseIcon.className = "fas fa-volume-up";
@@ -47,23 +47,23 @@ function playPause(){
         playPauseIcon.className = "fas fa-volume-mute";
     }
 
-} 
+}
 
 /* -- Functions for game template -- */
 
-function startGame(){
- 
+function startGame() {
+
 }
 
 
 /* Help with flipCard function taken from Marina Ferreira */
 
-function flipCard(){
+function flipCard() {
     this.classList.toggle('flip')
     flipAudio.play();
     flipAudio.currentTime = 0;
 
-    if(!cardFlipped){
+    if (!cardFlipped) {
         cardFlipped = true;
         firstCard = this;
         return;
@@ -75,31 +75,34 @@ function flipCard(){
     checkMatch();
 }
 
-function checkMatch(){
-    
+function checkMatch() {
+    let isAMatch = firstCard.dataset.id === secondCard.dataset.id;
+    isAMatch ? disableCards() : unflipCards();
+    matchAudio.play();
 }
 
 
-function matchedCards(){
+
+function matchedCards() {
 
 }
 
-function unmatchedCards(){
-    
+function unmatchedCards() {
+
 }
 
 
-function shuffleCards(){
-    
+function shuffleCards() {
+
 }
 
-function winner(){
+function winner() {
     winnerAudio.play();
-    if (count === 1){
+    if (count === 1) {
         count = 0;
         backgroundAudio.pause();
     }
-    
+
 }
 
 /* -- Help from W3 schools -- */
