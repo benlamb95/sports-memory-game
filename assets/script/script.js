@@ -51,10 +51,17 @@ function playPause() {
 
 }
 
+/*-- Remove Text overlay--*/
+/*-- Help from Stack overflow and Jquery Learning--*/
+
+$('div .start-overlay').click(function(e){
+    $(e.target).remove();
+});
+
 /* -- Functions for game template -- */
 
 function startGame() {
-    
+   
 
 }
 
@@ -106,10 +113,11 @@ function unmatchedCards() {
 }
 
 function boardReset() {
-    [hasFlippedCard, lockBoard] = [false, false];
+    [cardFlipped, lockBoard] = [false, false];
     [firstCard, secondCard] = [null, null];
 }
 
+/* Help from https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript#toc-3-moves */
 function countMoves(){
     moves++;
     counter.innerHTML = moves;

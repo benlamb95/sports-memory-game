@@ -42,9 +42,9 @@ body {
     letter-spacing: 2px;
 }
 
-/* --------- Overlays for start and winning 
+/* --------- Overlays for start and winning */
 
-.overlay-text {
+.start-overlay {
     display: none;
     position: fixed;
     top: 0;
@@ -58,15 +58,9 @@ body {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-.overlay-text.visible {
+.start-overlay.visible {
     display: flex;
-    flex-direction: column;
 }
-
-.finish-text-small {
-    font-size: 0.5em;
-}
-*/
 
 /* --------- Font awesome buttons */
 
