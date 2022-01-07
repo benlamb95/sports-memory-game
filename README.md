@@ -33,9 +33,9 @@ This game intends to have no competition as it is simply there for people to pla
     
 * [DEPLOYMENT](#deployment)
 
-* [Credits](#credits)
+* [Personal Thoughts](#personal-thoughts)
 
-* [Content](#content)
+* [Credits](#credits)
 
 * [Media](#media)
 
@@ -49,9 +49,20 @@ This game intends to have no competition as it is simply there for people to pla
 * [HTML](https://en.wikipedia.org/wiki/HTML5)
 * [CSS](https://en.wikipedia.org/wiki/CSS#CSS_3)
 * [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+* [Jquery](https://learn.jquery.com/)
 
+## Programs Used
 
-## DEPLOYMENT
+* GIT
+  * For version control.
+* GITPOD
+  * The IDE to code this site.
+* GITHUB
+  * Used to store repositories.
+* CHROME Developer tools
+  * For checking responsiveness while coding, correcting errors and editing code.
+
+  ## DEPLOYMENT
 
 * This site was deployed through GitHub pages. To do so follow the below steps:
   * In the GitHub repository click on the settings tab
@@ -71,21 +82,20 @@ If you want to work further on my project, go ahead and clone it following these
 
 To get to the source of this information: [Click here!](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
 
+## Personal Thoughts
 
-## Programs Used
+I have really struggle with Javascript and building this game was a huge challenge for me. The game I have created is fairly basic, although I would say it has room to be developed further. I feel the look of the game is very professional and it is fairly addictive to play.
 
-* GIT
-  * For version control.
-* GITPOD
-  * The IDE to code this site.
-* GITHUB
-  * Used to store repositories.
-* CHROME Developer tools
-  * For checking responsiveness while coding, correcting errors and editing code.
+If I was to develop this game further I would add a difficulty rating, where by the number of cards to flip increases or give a set amount of time to complete the memory game. 
 
 ## Credits
 * Free Code Camp Memory card game tutorial [Youtube](https://www.youtube.com/watch?v=ZniVgo8U7ek) for the memory card layout.
+* Scotch Memory Game (https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript#toc-3-moves)
+* Marina Fereira Memory Game (https://marina-ferreira.github.io/tutorials/js/memory-game/)
+
 
 ## Media
 
 * Card images (front and Back) came from FreePik which allows free downloads
+* Fontawesome Icons
+* Google Fonts
