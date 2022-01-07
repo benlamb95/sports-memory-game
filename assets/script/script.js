@@ -90,7 +90,7 @@ function matchedCards() {
 
     matchAudio.play(); // Plays match audio
     matches = matches + 1;
-    if (matches == 8) {
+    if (checkMatch == 16) {
         gameOver();
     }
     boardReset();
@@ -128,7 +128,7 @@ function countMoves() {
 
 function startTimer() {
     interval = setInterval(function () {
-        timer.innerHTML = minute + "mins " + second + " secs";
+        timer.innerHTML = `${minute} mins ${second} secs`;
         second++;
         if (second == 60) {
             minute++;
