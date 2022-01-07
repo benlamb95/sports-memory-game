@@ -179,7 +179,6 @@ window.onclick = function (event) {
 let finishModal = document.getElementById('finishModal')
 
 function gameOver() {
-
     winnerAudio.play();
     if (count == 1);
     count = 0;
