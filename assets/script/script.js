@@ -91,6 +91,7 @@ function matchedCards() {
     matchAudio.play(); // Plays match audio
     matches += 1;
     if (matches == 8) {
+        clearInterval(interval);
         gameOver();
     }
 }
@@ -126,16 +127,12 @@ function countMoves() {
 }
 
 function startTimer() {
-    return setInterval(function () {
+    interval = setInterval(function () {
         timer.innerHTML = `${minute} mins ${second} secs`;
         second++;
         if (second == 60) {
             minute++;
             second = 0;
-        }
-        if (minute == 60) {
-            hour++;
-            minute = 0;
         }
     }, 1000);
 }
@@ -183,6 +180,7 @@ let finishModal = document.getElementById('finishModal')
 
 function gameOver() {
     winnerAudio.play();
+
     }
 
 
