@@ -13,7 +13,7 @@ flipAudio.volume = 0.5;
 var matchAudio = new Audio('assets/audio/match.wav')
 matchAudio.volume = 0.5;
 var winnerAudio = new Audio('assets/audio/winner.mp3')
-winnerAudio = 0.6;
+winnerAudio.volume = 0.6;
 
 /* ---------- Time variables ---------- */
 /* https://sandraisrael.github.io/Memory-Game-fend/ */
@@ -149,15 +149,6 @@ function startTimer() {
     });
 })();
 
-function gameOver() {
-    winnerAudio.play();
-    if (count === 1) {
-        count = 0;
-        backgroundAudio.pause();
-        playPauseIcon.className = "fas fa-volume-mute";
-    }
-}
-
 /* -- Help from W3 schools -- */
 
 function restartGame() {
@@ -165,14 +156,13 @@ function restartGame() {
 }
 
 
-
 /* -- Modal Script -- */
 /* -- Help from W3 schools -- */
-var modal = document.getElementById("playModal")
+let modal = document.getElementById("playModal")
 
-var button = document.getElementById("how-to-play")
+let button = document.getElementById("how-to-play")
 
-var span = document.getElementsByClassName("close")[0]
+let span = document.getElementsByClassName("close")[0]
 
 button.onclick = function () {
     modal.style.display = "block"
@@ -185,6 +175,19 @@ span.onclick = function () {
 window.onclick = function (event) {
     if (event.target == modal) {
         modal.style.display = "none";
+    }
+}
+
+/* -- Finish Modal Script -- */
+
+let finishModal = document.getElementById('finishModal')
+
+function gameOver() {
+    winnerAudio.play();
+    if (count === 1) {
+        count = 0;
+        backgroundAudio.pause();
+        playPauseIcon.className = "fas fa-volume-mute";
     }
 }
 

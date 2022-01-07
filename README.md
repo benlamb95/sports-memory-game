@@ -28,7 +28,7 @@ This game intends to have no competition as it is simply there for people to pla
 
 * [Linking To User Stories](#linking-to-user-stories) 
 
-* [LANGUAGES USED](#languages-used)
+* [Tool USED](#languages-used)
     * [PROGRAMS USED](#programs-used)
     
 * [DEPLOYMENT](#deployment)
@@ -63,7 +63,7 @@ This game intends to have no competition as it is simply there for people to pla
 * As a user I want the audio to be relevant and enjoyable
 * As a user I want the game to be eyecatching
 ---
-## Languages Used
+## Tools Used
 
 * [HTML](https://en.wikipedia.org/wiki/HTML5)
 * [CSS](https://en.wikipedia.org/wiki/CSS#CSS_3)
@@ -72,14 +72,10 @@ This game intends to have no competition as it is simply there for people to pla
 
 ## Programs Used
 
-* GIT
-  * For version control.
 * GITPOD
   * The IDE to code this site.
 * GITHUB
   * Used to store repositories.
-* CHROME Developer tools
-  * For checking responsiveness while coding, correcting errors and editing code.
 
   ---
 
@@ -104,13 +100,6 @@ If you want to work further on my project, go ahead and clone it following these
 To get to the source of this information: [Click here!](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
 
 ---
-## Personal Thoughts
-
-I have really struggle with Javascript and building this game was a huge challenge for me. The game I have created is fairly basic, although I would say it has room to be developed further. I feel the look of the game is very professional and it is fairly addictive to play.
-
-If I was to develop this game further I would add a difficulty rating, where by the number of cards to flip increases or give a set amount of time to complete the memory game. 
-
-I would have also lied to have included a leaderboard, where the 10 best scores are loaded and saved.
 
 ## Credits
 * Free Code Camp Memory card game tutorial [Youtube](https://www.youtube.com/watch?v=ZniVgo8U7ek) for the memory card layout.
