@@ -16,12 +16,12 @@ var winnerAudio = new Audio('assets/audio/winner.mp3')
 winnerAudio = 0.6;
 
 /* ---------- Time variables ---------- */
-/* Help from https://www.youtube.com/watch?v=_a4XCarxwr8 */
+/* https://sandraisrael.github.io/Memory-Game-fend/ */
 
-let timeHour = document.getElementById('timer');
-let seconds = 0;
-
-timeHour = `00:${seconds}`;
+let timer = document.querySelector("#timer");
+var second = 0,
+    minute = 0;
+var interval;
 
 
 /* ---------- Game variables ---------- */
@@ -53,10 +53,6 @@ function playPause() {
 }
 
 /* -- Functions for game template -- */
-
-function startGame() {
-   
-}
 
 
 /* Help from Marina Ferreira memory card game */
@@ -91,9 +87,13 @@ function checkMatch() {
 function matchedCards() {
     firstCard.removeEventListener('click', flipCard) // removes click function from matched cards
     secondCard.removeEventListener('click', flipCard)
-    boardReset();
 
     matchAudio.play(); // Plays match audio
+    matches = matches + 1;
+    if (matches == 8) {
+        gameOver();
+    }
+    boardReset();
 }
 
 // flips back over unmatched cards
@@ -116,9 +116,29 @@ function boardReset() {
 
 //count moves
 /* Help from https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript#toc-3-moves */
-function countMoves(){
+function countMoves() {
     moves++;
     counter.innerHTML = moves;
+    if (moves == 1) {
+        second = 0;
+        minute = 0;
+        startTimer();
+    }
+}
+
+function startTimer() {
+    interval = setInterval(function () {
+        timer.innerHTML = minute + "mins " + second + " secs";
+        second++;
+        if (second == 60) {
+            minute++;
+            second = 0;
+        }
+        if (minute == 60) {
+            hour++;
+            minute = 0;
+        }
+    }, 1000);
 }
 
 // Cards shuffled and called straightaway
@@ -129,15 +149,12 @@ function countMoves(){
     });
 })();
 
-function winner() {
-    matches = matches + 1;
-    if (matches == 8) {
-        winner();
-        winnerAudio.play();
-        if (count === 1) {
-            count = 0;
-            backgroundAudio.pause();
-        }
+function gameOver() {
+    winnerAudio.play();
+    if (count === 1) {
+        count = 0;
+        backgroundAudio.pause();
+        playPauseIcon.className = "fas fa-volume-mute";
     }
 }
 
