@@ -179,9 +179,13 @@ window.onclick = function (event) {
 let finishModal = document.getElementById('finishModal')
 
 function gameOver() {
-    winnerAudio.play();
 
-    }
+    winnerAudio.play();
+    if (count == 1);
+    count = 0;
+    backgroundAudio.pause()
+    playPauseIcon.className = "fas fa-volume-mute";
+}
 
 
 
