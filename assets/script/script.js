@@ -88,11 +88,13 @@ function flipCard() {
     countMoves();
 }
 
+//check both cards
 function checkMatch() {
     let isAMatch = firstCard.dataset.id === secondCard.dataset.id; // Checks both dataID set are the same 
     isAMatch ? matchedCards() : unmatchedCards(); // if they are will do either matched or unmatched function
 }
 
+// Freezes matched cards
 function matchedCards() {
     firstCard.removeEventListener('click', flipCard) // removes click function from matched cards
     secondCard.removeEventListener('click', flipCard)
@@ -101,7 +103,7 @@ function matchedCards() {
     matchAudio.play(); // Plays match audio
 }
 
-
+// flips back over unmatched cards
 /* Jquery https://learn.jquery.com/ */
 function unmatchedCards() {
     setTimeout(() => {
@@ -112,20 +114,26 @@ function unmatchedCards() {
 
 }
 
+// Resets board when 2 cards dont match
 function boardReset() {
     [cardFlipped, lockBoard] = [false, false];
     [firstCard, secondCard] = [null, null];
 }
 
+//count moves
 /* Help from https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript#toc-3-moves */
 function countMoves(){
     moves++;
     counter.innerHTML = moves;
 }
 
-function shuffleCards() {
-
-}
+// Cards shuffled and called straightaway
+(function shuffleCards() {
+    cards.forEach(card => {
+        let randomNumber = Math.floor(Math.random() * 16);
+        card.style.order = randomNumber;
+    });
+})();
 
 function winner() {
     matches = matches + 1;
