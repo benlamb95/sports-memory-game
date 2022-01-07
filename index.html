@@ -122,7 +122,7 @@
     </footer>
 
 
-    <!-- Modal -->
+    <!-- how to play Modal -->
 
     <div id="playModal" class="modal">
         <div class="modal-content">
@@ -149,6 +149,28 @@
                 <p><strong>Have fun!!</strong></p>
             </div>
         </div>
+
+        <!-- Congratulations Modal -->
+        <div id="finishModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h2 class="modal-title">Congratulations</h2>
+                </div>
+                <div class="modal-body">
+                    <p>- You completed this in <span id="totalMoves"></span> moves
+                    </p>
+    
+                    <p>- You must then select 1 card which it will flip to its face picture (All sports activities).
+                        It is your job to find its matching pair within the remaining cards.
+                    </p>
+    
+                    <p>- Once you have found the matching pair, that pair will remain visible and you must continue until
+                        all pairs (8 in total) are found. If it doesnt match the cards will flip back over.</p>
+                </div>
+            </div>
 
         <!-- Scripts -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

@@ -54,7 +54,7 @@ function playPause() {
 /*-- Remove Text overlay--*/
 /*-- Help from Stack overflow and Jquery Learning--*/
 
-$('div .start-overlay').click(function(e){
+$('.start-overlay').click(function(e){
     $(e.target).remove();
 });
 
@@ -108,7 +108,7 @@ function unmatchedCards() {
         $(firstCard).removeClass('flip');
         $(secondCard).removeClass('flip');
         boardReset();
-    }, 1000);
+    }, 1000); // will allow 1 second before cards flip back over
 
 }
 
@@ -129,7 +129,7 @@ function shuffleCards() {
 
 function winner() {
     matches = matches + 1;
-    if (matches === 8) {
+    if (matches == 8) {
         winner();
         winnerAudio.play();
         if (count === 1) {
