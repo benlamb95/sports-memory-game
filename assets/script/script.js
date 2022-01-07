@@ -89,11 +89,10 @@ function matchedCards() {
     secondCard.removeEventListener('click', flipCard)
 
     matchAudio.play(); // Plays match audio
-    matches = matches + 1;
-    if (checkMatch == 16) {
+    matches += 1;
+    if (matches == 8) {
         gameOver();
     }
-    boardReset();
 }
 
 // flips back over unmatched cards
@@ -127,7 +126,7 @@ function countMoves() {
 }
 
 function startTimer() {
-    interval = setInterval(function () {
+    return setInterval(function () {
         timer.innerHTML = `${minute} mins ${second} secs`;
         second++;
         if (second == 60) {
@@ -184,12 +183,9 @@ let finishModal = document.getElementById('finishModal')
 
 function gameOver() {
     winnerAudio.play();
-    if (count === 1) {
-        count = 0;
-        backgroundAudio.pause();
-        playPauseIcon.className = "fas fa-volume-mute";
     }
-}
+
+
 
 /* -- Event Listeners -- */
 
