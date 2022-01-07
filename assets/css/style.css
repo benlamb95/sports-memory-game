@@ -42,26 +42,6 @@ body {
     letter-spacing: 2px;
 }
 
-/* --------- Overlays for start and winning */
-
-.start-overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    justify-content: center;
-    align-items: center;
-    z-index: 3;
-    font-size: 6em;
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-.start-overlay.visible {
-    display: flex;
-}
-
 /* --------- Font awesome buttons */
 
 .game-buttons-container {

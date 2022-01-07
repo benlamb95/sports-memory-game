@@ -33,6 +33,7 @@ let cardFlipped = false;
 let matches = 0;
 let counter = document.getElementById('moves');
 let moves = 0;
+
 /* -- End of Variables -- */
 
 /* -- Functions for background audio -- */
@@ -51,18 +52,10 @@ function playPause() {
 
 }
 
-/*-- Remove Text overlay--*/
-/*-- Help from Stack overflow and Jquery Learning--*/
-
-$('.start-overlay').click(function(e){
-    $(e.target).remove();
-});
-
 /* -- Functions for game template -- */
 
 function startGame() {
    
-
 }
 
 
@@ -106,7 +99,7 @@ function matchedCards() {
 // flips back over unmatched cards
 /* Jquery https://learn.jquery.com/ */
 function unmatchedCards() {
-    lockBoard = true;
+    lockBoard = true
     setTimeout(() => {
         $(firstCard).removeClass('flip');
         $(secondCard).removeClass('flip');
