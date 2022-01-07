@@ -106,6 +106,7 @@ function matchedCards() {
 // flips back over unmatched cards
 /* Jquery https://learn.jquery.com/ */
 function unmatchedCards() {
+    lockBoard = true;
     setTimeout(() => {
         $(firstCard).removeClass('flip');
         $(secondCard).removeClass('flip');
