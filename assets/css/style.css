@@ -438,6 +438,10 @@ a:visited {
         font-size: 0.6rem;
         padding: 8px 5px;
     }
+
+    .play-again {
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 290px) {
