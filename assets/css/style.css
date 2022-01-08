@@ -441,17 +441,20 @@ a:visited {
 }
 
 @media (max-width: 290px) {
-    .logo-heading {
-        margin-top: 40px;
-        height: 20px;
-    }
 
     .logo {
-        margin-top: 25px;
         padding-top: 5px;
     }
 
+    .heading {
+        margin: 5px;
+    }
+
     .game-buttons-container {
-        margin-top: 50px;
+        margin-top: 1px;
+    }
+
+    .info-container {
+        margin-top: 20px 0;
     }
 }
