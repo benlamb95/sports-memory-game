@@ -14,164 +14,163 @@
     <div class="logo-heading">
         <img class="logo" src="assets/images/sports-image.jpg" alt="Page Logo ">
         <h1 class="heading">Sports Memory Game</h1>
-    <!-- Font awesome icons -->
-    <div class="game-buttons-container">
-        <i class="fas fa-undo" id="restart" onclick="restartGame()" aria-label="Restart Button"></i>
-        <i class="fas fa-question" id="how-to-play" aria-label="How to play Button"></i>
-        <i class="fas fa-volume-mute" id="play-pause" onclick="playPause()" aria-label="Sound Button" type="audio"></i>
-    </div>
-    <!-- Games stats -->
-    <div class="game-container">
-        <div class="info-container">
-            <div class="game-info">
-                <i class="far fa-clock"></i> Timer: <span id="timer">
-                    0 mins 0 secs
-                </span>
+        <!-- Font awesome icons -->
+        <div class="game-buttons-container">
+            <i class="fas fa-undo" id="restart" onclick="restartGame()" aria-label="Restart Button"></i>
+            <i class="fas fa-question" id="how-to-play" aria-label="How to play Button"></i>
+            <i class="fas fa-volume-mute" id="play-pause" onclick="playPause()" aria-label="Sound Button"
+                type="audio"></i>
+        </div>
+        <!-- Games stats -->
+        <div class="game-container">
+            <div class="info-container">
+                <div class="game-info">
+                    <i class="far fa-clock"></i> Timer: <span id="timer">
+                        0 mins 0 secs
+                    </span>
+                </div>
+                <div class="game-info">
+                    <i class="far fa-hand-paper"></i></i> Moves: <span id="moves">0</span>
+                </div>
+                <div class="game-info">
+                    <i class="far fa-star"></i> Last Time: <span id="lastScore">0</span>
+                </div>
             </div>
-            <div class="game-info">
-                <i class="far fa-hand-paper"></i></i> Moves: <span id="moves">0</span>
-            </div>
-            <div class="game-info">
-                <i class="far fa-star"></i> Last Time: <span id="lastScore">0</span>
+            <!-- Memory Game -->
+            <div class="memory-game">
+                <!-- card 1 pair -->
+                <div class="memory-card" data-id="card1">
+                    <img class="card-front" src="assets/images/runner.jpg" alt="running">
+                    <img class="card-back" src="assets/images/card-back.jpg" alt="Card Back">
+                </div>
+                <div class="memory-card" data-id="card1">
+                    <img class="card-front" src="assets/images/runner.jpg" alt="running">
+                    <img class="card-back" src="assets/images/card-back.jpg" alt="Card Back">
+                </div>
+                <!-- card 2 pair -->
+                <div class="memory-card" data-id="card2">
+                    <img class="card-front" src="assets/images/badminton.jpg" alt="badminton">
+                    <img class="card-back" src="assets/images/card-back.jpg" alt="Card Back">
+                </div>
+                <div class="memory-card" data-id="card2">
+                    <img class="card-front" src="assets/images/badminton.jpg" alt="badminton">
+                    <img class="card-back" src="assets/images/card-back.jpg" alt="Card Back">
+                </div>
+                <!-- card 3 pair -->
+                <div class="memory-card" data-id="card3">
+                    <img class="card-front" src="assets/images/baseball.jpg" alt="baseball">
+                    <img class="card-back" src="assets/images/card-back.jpg" alt="Card Back">
+                </div>
+                <div class="memory-card" data-id="card3">
+                    <img class="card-front" src="assets/images/baseball.jpg" alt="baseball">
+                    <img class="card-back" src="assets/images/card-back.jpg" alt="Card Back">
+                </div>
+                <!-- card 4 pair -->
+                <div class="memory-card" data-id="card4">
+                    <img class="card-front" src="assets/images/basketball.jpg" alt="basketball">
+                    <img class="card-back" src="assets/images/card-back.jpg" alt="Card Back">
+                </div>
+                <div class="memory-card" data-id="card4">
+                    <img class="card-front" src="assets/images/basketball.jpg" alt="basketball">
+                    <img class="card-back" src="assets/images/card-back.jpg" alt="Card Back">
+                </div>
+                <!-- card 5 pair -->
+                <div class="memory-card" data-id="card5">
+                    <img class="card-front" src="assets/images/boxing.jpg" alt="boxing">
+                    <img class="card-back" src="assets/images/card-back.jpg" alt="Card Back">
+                </div>
+                <div class="memory-card" data-id="card5">
+                    <img class="card-front" src="assets/images/boxing.jpg" alt="boxing">
+                    <img class="card-back" src="assets/images/card-back.jpg" alt="Card Back">
+                </div>
+                <!-- card 6 pair -->
+                <div class="memory-card" data-id="card6">
+                    <img class="card-front" src="assets/images/football.jpg" alt="football">
+                    <img class="card-back" src="assets/images/card-back.jpg" alt="Card Back">
+                </div>
+                <div class="memory-card" data-id="card6">
+                    <img class="card-front" src="assets/images/football.jpg" alt="football">
+                    <img class="card-back" src="assets/images/card-back.jpg" alt="Card Back">
+                </div>
+                <!-- card 7 pair -->
+                <div class="memory-card" data-id="card7">
+                    <img class="card-front" src="assets/images/tennis.jpg" alt="tennis">
+                    <img class="card-back" src="assets/images/card-back.jpg" alt="Card Back">
+                </div>
+                <div class="memory-card" data-id="card7">
+                    <img class="card-front" src="assets/images/tennis.jpg" alt="tennis">
+                    <img class="card-back" src="assets/images/card-back.jpg" alt="Card Back">
+                </div>
+                <!-- card 8 pair -->
+                <div class="memory-card" data-id="card8">
+                    <img class="card-front" src="assets/images/yoga.jpg" alt="yoga">
+                    <img class="card-back" src="assets/images/card-back.jpg" alt="Card Back">
+                </div>
+                <div class="memory-card" data-id="card8">
+                    <img class="card-front" src="assets/images/yoga.jpg" alt="yoga">
+                    <img class="card-back" src="assets/images/card-back.jpg" alt="Card Back">
+                </div>
             </div>
         </div>
-        <!-- Memory Game -->
-        <div class="memory-game">
-            <!-- card 1 pair -->
-            <div class="memory-card" data-id="card1">
-                <img class="card-front" src="assets/images/runner.jpg" alt="running">
-                <img class="card-back" src="assets/images/card-back.jpg" alt="Card Back">
+        <footer>
+            <div class="footer-social">
+                <a href="https://github.com/benlamb95" target="_blank" rel="noopener noreferrer"
+                    aria-label="Open github in a new tab">
+                    <i class="fab fa-github"></i>
+                </a>
             </div>
-            <div class="memory-card" data-id="card1">
-                <img class="card-front" src="assets/images/runner.jpg" alt="running">
-                <img class="card-back" src="assets/images/card-back.jpg" alt="Card Back">
-            </div>
-            <!-- card 2 pair -->
-            <div class="memory-card" data-id="card2">
-                <img class="card-front" src="assets/images/badminton.jpg" alt="badminton">
-                <img class="card-back" src="assets/images/card-back.jpg" alt="Card Back">
-            </div>
-            <div class="memory-card" data-id="card2">
-                <img class="card-front" src="assets/images/badminton.jpg" alt="badminton">
-                <img class="card-back" src="assets/images/card-back.jpg" alt="Card Back">
-            </div>
-            <!-- card 3 pair -->
-            <div class="memory-card" data-id="card3">
-                <img class="card-front" src="assets/images/baseball.jpg" alt="baseball">
-                <img class="card-back" src="assets/images/card-back.jpg" alt="Card Back">
-            </div>
-            <div class="memory-card" data-id="card3">
-                <img class="card-front" src="assets/images/baseball.jpg" alt="baseball">
-                <img class="card-back" src="assets/images/card-back.jpg" alt="Card Back">
-            </div>
-            <!-- card 4 pair -->
-            <div class="memory-card" data-id="card4">
-                <img class="card-front" src="assets/images/basketball.jpg" alt="basketball">
-                <img class="card-back" src="assets/images/card-back.jpg" alt="Card Back">
-            </div>
-            <div class="memory-card" data-id="card4">
-                <img class="card-front" src="assets/images/basketball.jpg" alt="basketball">
-                <img class="card-back" src="assets/images/card-back.jpg" alt="Card Back">
-            </div>
-            <!-- card 5 pair -->
-            <div class="memory-card" data-id="card5">
-                <img class="card-front" src="assets/images/boxing.jpg" alt="boxing">
-                <img class="card-back" src="assets/images/card-back.jpg" alt="Card Back">
-            </div>
-            <div class="memory-card" data-id="card5">
-                <img class="card-front" src="assets/images/boxing.jpg" alt="boxing">
-                <img class="card-back" src="assets/images/card-back.jpg" alt="Card Back">
-            </div>
-            <!-- card 6 pair -->
-            <div class="memory-card" data-id="card6">
-                <img class="card-front" src="assets/images/football.jpg" alt="football">
-                <img class="card-back" src="assets/images/card-back.jpg" alt="Card Back">
-            </div>
-            <div class="memory-card" data-id="card6">
-                <img class="card-front" src="assets/images/football.jpg" alt="football">
-                <img class="card-back" src="assets/images/card-back.jpg" alt="Card Back">
-            </div>
-            <!-- card 7 pair -->
-            <div class="memory-card" data-id="card7">
-                <img class="card-front" src="assets/images/tennis.jpg" alt="tennis">
-                <img class="card-back" src="assets/images/card-back.jpg" alt="Card Back">
-            </div>
-            <div class="memory-card" data-id="card7">
-                <img class="card-front" src="assets/images/tennis.jpg" alt="tennis">
-                <img class="card-back" src="assets/images/card-back.jpg" alt="Card Back">
-            </div>
-            <!-- card 8 pair -->
-            <div class="memory-card" data-id="card8">
-                <img class="card-front" src="assets/images/yoga.jpg" alt="yoga">
-                <img class="card-back" src="assets/images/card-back.jpg" alt="Card Back">
-            </div>
-            <div class="memory-card" data-id="card8">
-                <img class="card-front" src="assets/images/yoga.jpg" alt="yoga">
-                <img class="card-back" src="assets/images/card-back.jpg" alt="Card Back">
-            </div>
-        </div>
-    </div>
-    <footer>
-        <div class="footer-social">
-            <a href="https://github.com/benlamb95" target="_blank" rel="noopener noreferrer"
-                aria-label="Open github in a new tab">
-                <i class="fab fa-github"></i>
-            </a>
-        </div>
-    </footer>
+        </footer>
 
 
-    <!-- how to play Modal -->
+        <!-- how to play Modal -->
 
-    <div id="playModal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <h2 class="modal-title">How do I play?</h2>
-            </div>
-            <div class="modal-body">
-                <p>- You will be presented 16 cards all faced down.
-                </p>
-
-                <p>- You must then select 1 card which it will flip to its face picture (All sports activities).
-                    It is your job to find its matching pair within the remaining cards.
-                </p>
-
-                <p>- Once you have found the matching pair, that pair will remain visible and you must continue until
-                    all pairs (8 in total) are found. If it doesnt match the cards will flip back over.</p>
-
-                <p>- There is a timer and total amount of selections counted if you wish to make it a little more
-                    competitve for yourself.</p>
-
-                <p><strong>Have fun!!</strong></p>
-            </div>
-        </div>
-    </div>
-
-        <!-- Congratulations Modal -->
-        <div id="finishModal">
+        <div id="playModal" class="modal">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="finish-close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
+                    <h2 class="modal-title">How do I play?</h2>
+                </div>
+                <div class="modal-body">
+                    <p>- You will be presented 16 cards all faced down.
+                    </p>
+
+                    <p>- You must then select 1 card which it will flip to its face picture (All sports activities).
+                        It is your job to find its matching pair within the remaining cards.
+                    </p>
+
+                    <p>- Once you have found the matching pair, that pair will remain visible and you must continue
+                        until
+                        all pairs (8 in total) are found. If it doesnt match the cards will flip back over.</p>
+
+                    <p>- There is a timer and total amount of selections counted if you wish to make it a little more
+                        competitve for yourself.</p>
+
+                    <p><strong>Have fun!!</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Congratulations Modal -->
+        <div id="finishModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
                     <h2 class="modal-title">Congratulations</h2>
                 </div>
                 <div class="modal-body">
                     <p>- You completed this in <span id="totalMoves"></span> moves
                     </p>
-    
-                    <p>- with a time of <span id= "totalTime"> </span>
+
+                    <p>- with a time of <span id="totalTime"> </span>
                     </p>
-    
-                    <button id="play-again"onclick="playAgain()">
+
+                    <button id="play-again" onclick="playAgain">
                         Play again?</a>
                     </button>
                 </div>
             </div>
-
+        </div>
         <!-- Scripts -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">

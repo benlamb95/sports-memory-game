@@ -40,7 +40,9 @@ let matches = 0;
 let counter = document.getElementById('moves');
 let moves = 0;
 
-let gameStatus = 'stall'; 'start'; 'end';
+let gameStatus = 'stall';
+'start';
+'end';
 
 /* -- End of Variables -- */
 
@@ -190,7 +192,9 @@ window.onclick = function (event) {
 }
 
 /* -- Finish Modal Script -- */
-/* https://stackoverflow.com/questions/59048984/open-modal-on-function-call */ 
+/* https://stackoverflow.com/questions/59048984/open-modal-on-function-call */
+
+let restart = document.querySelector("#play-again");
 
 function gameOver() {
     winnerAudio.play();
@@ -198,12 +202,14 @@ function gameOver() {
     count = 0;
     backgroundAudio.pause()
     playPauseIcon.className = "fas fa-volume-mute";
+
     $("#finishModal").show();
-    
+    playAgain();
 }
 
-
-
+function playAgain(){
+    restart.addEventListener('click', restartGame)
+}
 /* -- Event Listeners -- */
 
 cards.forEach(card => card.addEventListener('click', flipCard));
