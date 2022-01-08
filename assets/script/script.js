@@ -23,7 +23,7 @@ var second = 0,
     minute = 0;
 var interval;
 
-let scoreLocalStorage = localStorage.setItem("lastScore", timer.innerHTML);
+let scoreLocalStorage = localStorage.getItem("lastScore", timer.innerHTML);
 
 
 /* ---------- Game variables ---------- */
