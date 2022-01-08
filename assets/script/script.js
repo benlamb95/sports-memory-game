@@ -204,6 +204,9 @@ function gameOver() {
     playPauseIcon.className = "fas fa-volume-mute";
 
     $("#finishModal").show();
+    document.getElementById('totalMoves').innerHTML = moves;
+    document.getElementById('totalTime').innerHTML = scoreLocalStorage;
+
     playAgain();
 }
 
