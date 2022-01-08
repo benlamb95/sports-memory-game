@@ -201,7 +201,10 @@ let restart = document.querySelector("#play-again");
 
 function gameOver() {
     winnerAudio.play();
-    playPause();
+    if (count == 1);
+    count = 0;
+    backgroundAudio.pause()
+    playPauseIcon.className = "fas fa-volume-mute";
 
     $("#finishModal").show();
 
