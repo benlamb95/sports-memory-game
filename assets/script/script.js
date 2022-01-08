@@ -42,8 +42,6 @@ let matches = 0;
 let counter = document.getElementById('moves');
 let moves = 0;
 
-let gameStatus = stall, start, end
-
 /* -- End of Variables -- */
 
 /* -- Functions for background audio -- */
@@ -68,12 +66,10 @@ function playPause() {
 /* Help from Marina Ferreira memory card game */
 
 function flipCard() {
-    if (gameStatus === stall) {
         second = 0;
         minute = 0;
         startTimer();
-        gameStatus = started;
-    }
+    
     if (lockBoard) return;
     if (this === firstCard) return; // stops the action of clicking same card twice. 
     this.classList.toggle('flip');
@@ -110,7 +106,6 @@ function matchedCards() {
     matchAudio.play(); // Plays match audio
     matches += 1;
     if (matches == 8) {
-        gameStatus === gameOver;
         clearInterval(interval);
         localStorage.setItem("lastScore", timer.innerHTML);
         gameOver();
