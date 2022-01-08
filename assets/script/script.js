@@ -1,20 +1,18 @@
-/*jshint esversion: 6 */
-
 /* -- Variables -- */
 
 /* -- Audio -- */
 /* Help from  https://www.youtube.com/watch?v=wffK2OIt8u0 */
-var backgroundAudio = new Audio('assets/audio/background.mp3');
+var backgroundAudio = new Audio('assets/audio/background.mp3')
 backgroundAudio.loop = true;
 backgroundAudio.volume = 0.3;
-var playPauseIcon = document.getElementById('play-pause');
+var playPauseIcon = document.getElementById('play-pause')
 var count = 0;
 
-var flipAudio = new Audio('assets/audio/acardflip.wav');
+var flipAudio = new Audio('assets/audio/acardflip.wav')
 flipAudio.volume = 0.5;
-var matchAudio = new Audio('assets/audio/match.wav');
+var matchAudio = new Audio('assets/audio/match.wav')
 matchAudio.volume = 0.5;
-var winnerAudio = new Audio('assets/audio/winner.mp3');
+var winnerAudio = new Audio('assets/audio/winner.mp3')
 winnerAudio.volume = 0.6;
 
 /* ---------- Time variables ---------- */
@@ -34,13 +32,17 @@ $("#lastScore").text(scoreLocalStorage);
 
 /* ---------- Game variables ---------- */
 
-const cards = document.querySelectorAll('.memory-card');
+const cards = document.querySelectorAll('.memory-card')
 let firstCard, secondCard;
 let lockBoard = false;
 let cardFlipped = false;
 let matches = 0;
 let counter = document.getElementById('moves');
 let moves = 0;
+
+let gameStatus = 'stall';
+'start';
+'end';
 
 /* -- End of Variables -- */
 
@@ -50,11 +52,11 @@ let moves = 0;
 function playPause() {
     if (count == 0) {
         count = 1;
-        backgroundAudio.play();
+        backgroundAudio.play()
         playPauseIcon.className = "fas fa-volume-up";
     } else {
         count = 0;
-        backgroundAudio.pause();
+        backgroundAudio.pause()
         playPauseIcon.className = "fas fa-volume-mute";
     }
 
@@ -66,13 +68,15 @@ function playPause() {
 /* Help from Marina Ferreira memory card game */
 
 function flipCard() {
+    if (gameStatus === 'stall') {
         second = 0;
         minute = 0;
         startTimer();
-    
+        gameStatus = 'started';
+    }
     if (lockBoard) return;
     if (this === firstCard) return; // stops the action of clicking same card twice. 
-    this.classList.toggle('flip');
+    this.classList.toggle('flip')
     flipAudio.play();
     flipAudio.currentTime = 0;
 
@@ -100,12 +104,13 @@ function checkMatch() {
 
 // Freezes matched cards
 function matchedCards() {
-    firstCard.removeEventListener('click', flipCard); // removes click function from matched cards
-    secondCard.removeEventListener('click', flipCard);
+    firstCard.removeEventListener('click', flipCard) // removes click function from matched cards
+    secondCard.removeEventListener('click', flipCard)
 
     matchAudio.play(); // Plays match audio
     matches += 1;
     if (matches == 8) {
+        gameStatus == 'gameOver';
         clearInterval(interval);
         localStorage.setItem("lastScore", timer.innerHTML);
         gameOver();
@@ -119,7 +124,7 @@ function matchedCards() {
 // flips back over unmatched cards
 /* Jquery https://learn.jquery.com/ */
 function unmatchedCards() {
-    lockBoard = true;
+    lockBoard = true
     setTimeout(() => {
         $(firstCard).removeClass('flip');
         $(secondCard).removeClass('flip');
@@ -169,25 +174,25 @@ function restartGame() {
 
 /* -- Modal Script -- */
 /* -- Help from W3 schools -- */
-let modal = document.getElementById("playModal");
+let modal = document.getElementById("playModal")
 
-let button = document.getElementById("how-to-play");
+let button = document.getElementById("how-to-play")
 
-let span = document.getElementsByClassName("close")[0];
+let span = document.getElementsByClassName("close")[0]
 
 button.onclick = function () {
-    modal.style.display = "block";
-};
+    modal.style.display = "block"
+}
 
 span.onclick = function () {
-    modal.style.display = "none";
-};
+    modal.style.display = "none"
+}
 
 window.onclick = function (event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
-};
+}
 
 /* -- Finish Modal Script -- */
 /* https://stackoverflow.com/questions/59048984/open-modal-on-function-call */
@@ -204,7 +209,7 @@ function gameOver() {
 }
 
 function playAgain() {
-    restart.addEventListener('click', restartGame);
+    restart.addEventListener('click', restartGame)
 }
 /* -- Event Listeners -- */
 
