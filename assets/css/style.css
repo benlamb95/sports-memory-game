@@ -220,18 +220,42 @@ body {
 
 /* --------- Finish Modal */
 
-.modal-content.finish{
+.modal-content.finish {
     height: 25rem;
 }
 
+.trophy {
+    font-size: 8rem;
+    color: rgb(221, 174, 32);
+    animation: shake 2s linear infinite;
+}
 
+/* -- https://www.tutorialspoint.com/how-to-shake-wiggle-an-image-with-css */
 
-.play-again { 
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: rotate(0);
+    }
+
+    25% {
+
+        transform: rotate(-40deg);
+    }
+
+    75% {
+        transform: rotate(40deg);
+    }
+}
+
+.play-again {
     font-family: 'Architects Daughter';
     font-size: 30px;
     max-width: 200px;
     max-height: 200px;
-    margin-top: 40px;
+    margin-top: 10px;
+
     padding: 5px;
     color: green;
     background: #fafafa;
@@ -406,14 +430,14 @@ a:visited {
         font-size: 1.1rem;
     }
 
-    .close{
+    .close {
         font-size: 1.1rem;
     }
 
     .modal-body p {
         font-size: 0.6rem;
         padding: 8px 5px;
-    }    
+    }
 }
 
 @media (max-width: 290px) {
