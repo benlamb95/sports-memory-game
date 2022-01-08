@@ -23,6 +23,10 @@ var second = 0,
     minute = 0;
 var interval;
 
+/* ---------- Local storage ---------- */
+
+/* https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage */
+
 let scoreLocalStorage = localStorage.getItem("lastScore", timer.innerHTML);
 
 
@@ -64,7 +68,7 @@ function playPause() {
 function flipCard() {
     if (gameStatus === 'stall') {
         second = 0;
-        minute =0;
+        minute = 0;
         startTimer();
         gameStatus = 'started';
     }
@@ -105,9 +109,12 @@ function matchedCards() {
     if (matches == 8) {
         gameStatus == 'gameOver';
         clearInterval(interval);
+        localStorage.setItem("lastScore", timer.innerHTML);
         gameOver();
     }
 }
+
+
 
 // flips back over unmatched cards
 /* Jquery https://learn.jquery.com/ */
@@ -183,8 +190,7 @@ window.onclick = function (event) {
 }
 
 /* -- Finish Modal Script -- */
-
-let finishModal = document.getElementById('finishModal')
+/* https://stackoverflow.com/questions/59048984/open-modal-on-function-call */ 
 
 function gameOver() {
     winnerAudio.play();
@@ -192,6 +198,8 @@ function gameOver() {
     count = 0;
     backgroundAudio.pause()
     playPauseIcon.className = "fas fa-volume-mute";
+    $("#finishModal").show();
+    
 }
 
 
