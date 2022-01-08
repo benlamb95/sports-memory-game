@@ -297,10 +297,7 @@ a:visited {
 }
 
 @media (max-width: 570px) {
-    body {
-        height: 100vh;
-    }
-    
+
     .heading {
         font-size: 1.8rem;
     }

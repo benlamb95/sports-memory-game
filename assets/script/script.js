@@ -145,6 +145,9 @@ function countMoves() {
     counter.innerHTML = moves;
 }
 
+let moveStorage = localStorage.getItem("lastMoves", moves.innerHTML);
+$("#lastMoves").text(moveStorage);
+
 function startTimer() {
     interval = setInterval(function () {
         timer.innerHTML = `${minute} mins ${second} secs`;
@@ -210,7 +213,7 @@ function gameOver() {
     playAgain();
 }
 
-function playAgain(){
+function playAgain() {
     restart.addEventListener('click', restartGame)
 }
 /* -- Event Listeners -- */
