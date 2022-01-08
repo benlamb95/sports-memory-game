@@ -362,7 +362,7 @@ a:visited {
 
     .modal-content {
         width: 25rem;
-        height: 25rem;
+        height: 30rem;
     }
 
     .modal-title {
@@ -387,6 +387,10 @@ a:visited {
     .game-info {
         font-size: 0.8em;
         padding-left: 20px;
+    }
+
+    .play-again {
+        font-size: 20px;
     }
 }
 
@@ -437,10 +441,6 @@ a:visited {
     .modal-body p {
         font-size: 0.6rem;
         padding: 8px 5px;
-    }
-
-    .play-again {
-        font-size: 20px;
     }
 }
 
