@@ -28,7 +28,7 @@ var interval;
 /* https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage */
 
 let scoreLocalStorage = localStorage.getItem("lastScore", timer.innerHTML);
-
+$("#lastScore").text(scoreLocalStorage);
 
 /* ---------- Game variables ---------- */
 
@@ -118,6 +118,8 @@ function matchedCards() {
 
 
 
+
+
 // flips back over unmatched cards
 /* Jquery https://learn.jquery.com/ */
 function unmatchedCards() {
@@ -204,8 +206,6 @@ function gameOver() {
     playPauseIcon.className = "fas fa-volume-mute";
 
     $("#finishModal").show();
-    document.getElementById('totalMoves').innerHTML = moves;
-    document.getElementById('totalTime').innerHTML = scoreLocalStorage;
 
     playAgain();
 }

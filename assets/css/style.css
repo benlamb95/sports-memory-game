@@ -89,7 +89,7 @@ body {
 
 .info-container {
     min-height: 50px;
-    height: 9vh;
+    height: 30px;
     max-height: 72px;
     width: 100%;
     display: flex;
@@ -101,7 +101,7 @@ body {
 
 .game-info {
     padding-left: 40px;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
 }
 
 /* --------- memory game container */
