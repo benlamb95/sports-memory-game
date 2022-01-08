@@ -34,6 +34,8 @@ let matches = 0;
 let counter = document.getElementById('moves');
 let moves = 0;
 
+let gameStatus = 'stall'; 'start'; 'end';
+
 /* -- End of Variables -- */
 
 /* -- Functions for background audio -- */
@@ -58,6 +60,12 @@ function playPause() {
 /* Help from Marina Ferreira memory card game */
 
 function flipCard() {
+    if (gameStatus === 'stall') {
+        second = 0;
+        minute =0;
+        startTimer();
+        gameStatus = 'started';
+    }
     if (lockBoard) return;
     if (this === firstCard) return; // stops the action of clicking same card twice. 
     this.classList.toggle('flip')
@@ -81,6 +89,8 @@ function flipCard() {
 function checkMatch() {
     let isAMatch = firstCard.dataset.id === secondCard.dataset.id; // Checks both dataID set are the same 
     isAMatch ? matchedCards() : unmatchedCards(); // if they are will do either matched or unmatched function
+
+    countMoves();
 }
 
 // Freezes matched cards
@@ -91,6 +101,7 @@ function matchedCards() {
     matchAudio.play(); // Plays match audio
     matches += 1;
     if (matches == 8) {
+        gameStatus == 'gameOver';
         clearInterval(interval);
         gameOver();
     }
@@ -119,11 +130,6 @@ function boardReset() {
 function countMoves() {
     moves++;
     counter.innerHTML = moves;
-    if (moves == 1) {
-        second = 0;
-        minute = 0;
-        startTimer();
-    }
 }
 
 function startTimer() {
