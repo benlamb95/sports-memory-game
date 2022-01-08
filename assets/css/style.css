@@ -224,6 +224,8 @@ body {
     height: 25rem;
 }
 
+
+
 .play-again { 
     font-family: 'Architects Daughter';
     font-size: 30px;
@@ -295,10 +297,10 @@ a:visited {
 }
 
 @media (max-width: 570px) {
-    .logo-heading {
-        height: 50px;
+    body {
+        height: 100vh;
     }
-
+    
     .heading {
         font-size: 1.8rem;
     }
