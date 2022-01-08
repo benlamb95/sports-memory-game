@@ -101,6 +101,7 @@ function checkMatch() {
     countMoves();
 }
 
+
 // Freezes matched cards
 function matchedCards() {
     firstCard.removeEventListener('click', flipCard) // removes click function from matched cards
@@ -144,9 +145,6 @@ function countMoves() {
     moves++;
     counter.innerHTML = moves;
 }
-
-let moveStorage = localStorage.getItem("lastMoves", moves.innerHTML);
-$("#lastMoves").text(moveStorage);
 
 function startTimer() {
     interval = setInterval(function () {
