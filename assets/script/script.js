@@ -64,7 +64,6 @@ function playPause() {
 
 /* -- Functions for game template -- */
 
-
 /* Help from Marina Ferreira memory card game */
 
 function flipCard() {
@@ -76,7 +75,7 @@ function flipCard() {
     }
     if (lockBoard) return;
     if (this === firstCard) return; // stops the action of clicking same card twice. 
-    this.classList.toggle('flip')
+    this.classList.toggle('flip');
     flipAudio.play();
     flipAudio.currentTime = 0;
 
@@ -101,7 +100,6 @@ function checkMatch() {
     countMoves();
 }
 
-
 // Freezes matched cards
 function matchedCards() {
     firstCard.removeEventListener('click', flipCard); // removes click function from matched cards
@@ -116,10 +114,6 @@ function matchedCards() {
         gameOver();
     }
 }
-
-
-
-
 
 // flips back over unmatched cards
 /* Jquery https://learn.jquery.com/ */
@@ -146,6 +140,7 @@ function countMoves() {
     counter.innerHTML = moves;
 }
 
+// Timer start function
 function startTimer() {
     interval = setInterval(function () {
         timer.innerHTML = `${minute} mins ${second} secs`;
@@ -166,11 +161,10 @@ function startTimer() {
 })();
 
 /* -- Help from W3 schools -- */
-
+// restart game
 function restartGame() {
     location.reload();
 }
-
 
 /* -- Modal Script -- */
 /* -- Help from W3 schools -- */
