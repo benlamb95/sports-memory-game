@@ -31,6 +31,8 @@ This game intends to have no competition as it is simply there for people to pla
 
 * [Linking To User Stories](#linking-to-user-stories) 
 
+* [Developments](#developments) 
+
 * [Tools Used](#tools-used)
     * [PROGRAMS USED](#programs-used)
     
@@ -146,7 +148,7 @@ The font I selcted was Architects Daughter from Google fonts with a backup of cu
 ** Final validator result above
 * One error within CSS validator was from using more than one argument within margin-top.
 
-![JavaScript](assets/documentation/css-validator.png)
+![JavaScript](assets/documentation/javaS-validator.png)
 ** Final validator result above
 * My JavaScript validatior didnt throw up any errors however there was warnings in regards to missing semi-colons which was resolved.
 * I also included a return before my ternary operator.
@@ -174,6 +176,7 @@ The font I selcted was Architects Daughter from Google fonts with a backup of cu
 ## Unsolved bugs and errors
 * Issue with timer as mentioned earlier; I have managed to ensure the timer starts on the first card flip however still a slight delay in counting up.
 * Initially wanted a welcome modal/text overlay; The modal would constantly freeze and produce lots of errors when making amendments in my code so this had to be removed.
+* I wanted to add a moves storage aswell next to timer counter however was unable to priduce results as expected as it would count the moves as the user would select a card. Had to remove this feature.
 
 ## Linking To User Stories
 
