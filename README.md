@@ -5,6 +5,8 @@ Here I have created a memory game which is suitable for everyone. The aim of the
 This game intends to have no competition as it is simply there for people to play when they are bored or when then have a spare 5/10 mins on their lunch break at work. The sports nature is incorporated within the selection of music to make it relaxing yet uplifting and positive.  Please Enjoy 😃
 
 ## Final Design
+### [Here is a link to the final project](https://benlamb95.github.io/sports-memory-game/)
+![Am-I-Responsive](assets/documentation/responsive.png)
 
 
 ## CONTENTS
@@ -154,6 +156,52 @@ The font I selcted was Architects Daughter from Google fonts with a backup of cu
 ## Lighthouse
 ![Lighthouse](assets/documentation/lighthouse-report.png)
 
+---
+
+## Solved bugs and errors
+1. Selecting more than two cards in one move 
+    - Solved issue by adding locked board to unmatched cards solved this issue
+2. Timer starting after 2 card flip
+   - For this I had to create three variables which was stall, start and end. This as mentioned before has causing warning however it allowed my timer to be set after first card flip.(Still slight delay)  
+3. The structure of cards wasnt centred for larger screens
+   - This issue was resolved by having to add a padding right of 100px. This then centered my game.  
+4. Following on from the above error structure of game below 700px became distorted
+
+   - Had to remove all padding right for game structure below this width and reduce size of board.
+5. Issue saving local storage within last time ID
+   - i as initially trying to use a Query selector but for some reason this would then stop my cards from being able to flip. I researched Jquery to see if this would sort this issue and it did with no errors.
+
+## Unsolved bugs and errors
+* Issue with timer as mentioned earlier; I have managed to ensure the timer starts on the first card flip however still a slight delay in counting up.
+* Initially wanted a welcome modal/text overlay; The modal would constantly freeze and produce lots of errors when making amendments in my code so this had to be removed.
+
+## Linking To User Stories
+
+`As a user I want the game to be fun`:
+
+* The memory game I feel is very fun to play. The board layout constantly changes meaning the cards arent in the same place
+
+`As a user I want it to be easy to navigate`:
+
+* Very simplistic design with three main buttons and a footer. Icons enlarge and change colour to signify it will do something. When we are taken to how to play modal a simple 'X' in top right corner to get out of that modal.
+
+`As a user I want a game that is relaxing`:
+
+* I have used relaxing background music which also is quite uplifting. There is no competitive feel about the game as i Havent including a count down timer. It is simply a game which you can play to take your mind off things.
+
+`As a user I want the game to be eyecatching`:
+
+* I have used a very eye catching green with a linear effect which is attractive yet subtle. The cards themselves have a card feel about them in the sense the back is 'busy' but the front is too the point and easy to read.
+
+`As a user I want the audio to be relevant and enjoyable`:
+
+* As mentioned earlier the game has relaxing background music which can be turned off if not needed. The flip and match effects are quick, not too loud but fit in with the card game. The winner audio too is only short but signifys the user has beat the game.
+
+---
+
+## Developments
+As I progress within JavaScript this game is something I would like to come back to and develop. Some ideas I want going forward is to increase the number of cards via a difficulty button. To add a leaderboard system that will contain all the best 10 scores. A welcome modal that allows you to view the above (levels/leaderboard). 
+
 ## Tools Used
 
 * [HTML](https://en.wikipedia.org/wiki/HTML5)
@@ -206,6 +254,7 @@ To get to the source of this information: [Click here!](https://docs.github.com/
 * Learn JQuery (https://unclebigbay.com/difference-between-vanilla-javascript-and-javascript-explained)
 * How to play audio files(https://www.delftstack.com/howto/javascript/play-audio-javascript/)
 * Youtube how to play audio (https://www.youtube.com/watch?v=wffK2OIt8u0)
+* Storing data (https://codetheweb.blog/javascript-localstorage/)
 
 ## Media
 
