@@ -40,7 +40,7 @@ let matches = 0;
 let counter = document.getElementById('moves');
 let moves = 0;
 
-let gameStatus = 'stall'
+let gameStatus = 'stall';
 'start';
 'end';
 
@@ -209,3 +209,4 @@ function playAgain() {
 /* -- Event Listeners -- */
 
 cards.forEach(card => card.addEventListener('click', flipCard));
+document.getElementById("pauseIcon").addEventListener("click", playPause);

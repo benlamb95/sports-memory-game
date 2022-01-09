@@ -29,7 +29,7 @@ This game intends to have no competition as it is simply there for people to pla
 
 * [Linking To User Stories](#linking-to-user-stories) 
 
-* [Tool USED](#languages-used)
+* [Tools Used](#tools-used)
     * [PROGRAMS USED](#programs-used)
     
 * [DEPLOYMENT](#deployment)
@@ -107,6 +107,50 @@ My game has three main clours present throughout the site; Green, white and blac
 ## Font
 
 The font I selcted was Architects Daughter from Google fonts with a backup of cursive. I really liked the font as it was quite funky but still kept its readability; perfect for a game environment. 
+
+---
+
+## TESTING
+
+### Devices
+
+* I have tested my website on the following devices:
+
+  * Apple
+    * iPhone X
+    * iPhone 8 plus
+    * iPhone 11 Max
+    * iPhone 13 Max
+    * iPad Pro
+    * Mac Book 
+
+  * Laptops/Desktops
+    * Dell Inspiron 15 5000
+    * HP Pavilion 14
+    * LG Display screen 32inch
+
+  * Browsers
+    * Chrome
+    * Edge
+    * Safari
+    * Firefox
+
+---
+
+## Validators
+![HTML](assets/documentation/html-validator.png)
+** Final validator result above.
+* Initially I had only a small number of errors within my HTML. Some were due to not closing body tag and one was a missues of 'type'.
+
+![CSS](assets/documentation/css-validator.png)
+** Final validator result above
+* One error within CSS validator was from using more than one argument within margin-top.
+
+![JavaScript](assets/documentation/css-validator.png)
+** Final validator result above
+* My JavaScript validatior didnt throw up any errors however there was warnings in regards to missing semi-colons which was resolved.
+* I also included a return before my ternary operator.
+* There are still three warnings left; however i have tried resolving this issue with no luck without causing my game to break. 
 
 ## Tools Used
 
