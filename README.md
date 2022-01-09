@@ -34,8 +34,6 @@ This game intends to have no competition as it is simply there for people to pla
     
 * [DEPLOYMENT](#deployment)
 
-* [Personal Thoughts](#personal-thoughts)
-
 * [Credits](#credits)
 
 * [Media](#media)
@@ -150,7 +148,11 @@ The font I selcted was Architects Daughter from Google fonts with a backup of cu
 ** Final validator result above
 * My JavaScript validatior didnt throw up any errors however there was warnings in regards to missing semi-colons which was resolved.
 * I also included a return before my ternary operator.
-* There are still three warnings left; however i have tried resolving this issue with no luck without causing my game to break. 
+* There are still three warnings left; however I have tried resolving this issue with no luck without causing my game to break. 
+
+---
+## Lighthouse
+![Lighthouse](assets/documentation/lighthouse-report.png)
 
 ## Tools Used
 
@@ -165,6 +167,7 @@ The font I selcted was Architects Daughter from Google fonts with a backup of cu
   * The IDE to code this site.
 * GITHUB
   * Used to store repositories.
+* Favicon Generator
 
   ---
 
@@ -194,10 +197,24 @@ To get to the source of this information: [Click here!](https://docs.github.com/
 * Free Code Camp Memory card game tutorial [Youtube](https://www.youtube.com/watch?v=ZniVgo8U7ek) for the memory card layout.
 * Scotch Memory Game (https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript#toc-3-moves)
 * Marina Fereira Memory Game (https://marina-ferreira.github.io/tutorials/js/memory-game/)
-
+* Sandra Israel (https://sandraisrael.github.io/Memory-Game-fend/)
+* Code Institute
+* W3 Schools 
+* MDN Web Docs
+* Stack Overflow
+* Learn JQuery (https://learn.jquery.com/)
+* Learn JQuery (https://unclebigbay.com/difference-between-vanilla-javascript-and-javascript-explained)
+* How to play audio files(https://www.delftstack.com/howto/javascript/play-audio-javascript/)
+* Youtube how to play audio (https://www.youtube.com/watch?v=wffK2OIt8u0)
 
 ## Media
 
 * Card images (front and Back) came from FreePik which allows free downloads
 * Fontawesome Icons
 * Google Fonts
+
+## Audio 
+* Card Flip - FreeSound
+* Match - FreeSound
+* Background Music - Bensound
+* Winner Music - Mixkit
