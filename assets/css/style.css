@@ -301,6 +301,8 @@ a:visited {
 
 /* ---------- Media Queries */
 
+/* Media Width Max 700px */
+
 @media (max-width: 700px) {
     .game-info {
         margin: 0;
@@ -319,6 +321,8 @@ a:visited {
         padding: 10px 5px;
     }
 }
+
+/* Media Width Max 570px */
 
 @media (max-width: 570px) {
 
@@ -394,6 +398,8 @@ a:visited {
     }
 }
 
+/* Media Width Max 460px */
+
 @media (max-width: 460px) {
     .heading {
         font-size: 1rem;
@@ -443,6 +449,8 @@ a:visited {
         padding: 8px 5px;
     }
 }
+
+/* Media Width Max 290px */
 
 @media (max-width: 290px) {
 
