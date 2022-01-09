@@ -13,6 +13,7 @@ This game intends to have no competition as it is simply there for people to pla
     * [USERSTORIES](#user-stories)
 
 * [FEATURES](#features)
+  * [Audio](#audio)
   * [COLOURS](#colours)
   * [FONT](#font)
 
@@ -98,6 +99,14 @@ Finally, once the user has successfully matched all 16 cards a win modal will be
 ### Audio
 
 As mentioned throughout the features section there are 4 pieces of audio within the game. The background music which is chilled but also upbeat; a flip effect, a match noise which will enforce to the user two cards have successfully matched and finally the winning audio.
+
+## Colours
+
+My game has three main clours present throughout the site; Green, white and black. The green background has a linear gradient effect which takes the shade of green from lighter to darker. I feel this makes it more attractive than simplying having 1 shade of green but not too distracting from the main purpose which is the game. I have used black and white as has a very good contrast. 
+
+## Font
+
+The font I selcted was Architects Daughter from Google fonts with a backup of cursive. I really liked the font as it was quite funky but still kept its readability; perfect for a game environment. 
 
 ## Tools Used
 
