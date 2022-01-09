@@ -95,6 +95,10 @@ A very simple footer with an external link to my main Git Hub page. Link has the
 
 Finally, once the user has successfully matched all 16 cards a win modal will be presented. The background audio (if selected by the user) will stop and a congrats style audio will play. The modal again is very simplistic with a trophy that 'shakes' left to right and this will do this until the user clicks off the modal. There is a play again button which will reload the game. Again the button has a simple hover effect.
 
+### Audio
+
+As mentioned throughout the features section there are 4 pieces of audio within the game. The background music which is chilled but also upbeat; a flip effect, a match noise which will enforce to the user two cards have successfully matched and finally the winning audio.
+
 ## Tools Used
 
 * [HTML](https://en.wikipedia.org/wiki/HTML5)
