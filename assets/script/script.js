@@ -95,9 +95,7 @@ function flipCard() {
 //check both cards
 function checkMatch() {
     let isAMatch = firstCard.dataset.id === secondCard.dataset.id; // Checks both dataID set are the same 
-    isAMatch ? matchedCards() : unmatchedCards(); // if they are will do either matched or unmatched function
-
-    countMoves();
+    return isAMatch ? matchedCards() : unmatchedCards(); // if they are will do either matched or unmatched function
 }
 
 // Freezes matched cards
