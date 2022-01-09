@@ -40,7 +40,7 @@ let matches = 0;
 let counter = document.getElementById('moves');
 let moves = 0;
 
-let gameStatus = 'stall';
+let gameStatus = 'stall'
 'start';
 'end';
 

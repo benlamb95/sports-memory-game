@@ -63,6 +63,38 @@ This game intends to have no competition as it is simply there for people to pla
 * As a user I want the audio to be relevant and enjoyable
 * As a user I want the game to be eyecatching
 ---
+
+## Features
+The game consists of one page only, however has Modals that pop up when clicked or when the game is over. 
+
+![Logo-header](assets/documentation/logoHeader-and-gameButtons.png)
+
+The top of the game contains the game Logo along with the game name. The icons below that all have hover effects to ensure the user knows that they are about to click on that icon. The left icon resets the full game, the question mark produces a how to play modal and the sound icon allows the user the play music. 
+
+![Play-Modal](assets/documentation/play-modal.png)
+
+The how to play Modal is a simple design which has a title explaining what this modal is and step by step instructions. Next to the title is a close icon which when hovered turns red; again enforcing to the user this is being selected.
+
+![Game-Stats](assets/documentation/game-stats.png)
+
+This section of the game shows the current time of the round, the current moves and the last time the user got. The current time does have a slight delay when counting up however. The total moves increments by one when the user has flipped over 2 cards which would signify 1 go. The last time saves the users previous round.
+
+![Memory-Game](assets/documentation/memory-game.png)
+
+The memory game itself is a 4 by 4 sqaure with cards evenly seperated. The cards hve a border and rounded edges to resemble a card style as sort. The cards also have a hover effect again reiterating to the user they are slecting that particular card. When the card has been clicked it has a depress animation. The cards will then 'flip'with a audio cue to make it sound realistic.
+
+![Matched](assets/documentation/matched-cards.png)
+
+Matched cards are kept visible on the board to help users with knowing which card has correctly been identified. All cards face value have a white background with a character playing a certain sport. It was important to keep the background white and use similar characters to make the game a little more challenging based on the size of the game.
+
+![Footer](assets/documentation/footer.png)
+
+A very simple footer with an external link to my main Git Hub page. Link has the same hover effect as the game Info section and the page is opened in an external tab.
+
+![Win-Modal](assets/documentation/win-modal.png)
+
+Finally, once the user has successfully matched all 16 cards a win modal will be presented. The background audio (if selected by the user) will stop and a congrats style audio will play. The modal again is very simplistic with a trophy that 'shakes' left to right and this will do this until the user clicks off the modal. There is a play again button which will reload the game. Again the button has a simple hover effect.
+
 ## Tools Used
 
 * [HTML](https://en.wikipedia.org/wiki/HTML5)
