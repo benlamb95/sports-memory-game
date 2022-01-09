@@ -209,4 +209,4 @@ function playAgain() {
 /* -- Event Listeners -- */
 
 cards.forEach(card => card.addEventListener('click', flipCard));
-document.getElementById("pauseIcon").addEventListener("click", playPause);
+document.getElementById("play-pause").addEventListener("click", playPause);
